@@ -97,3 +97,4 @@ if ! rm -Rf $folder/src; then
 else
 	echo "sucessfully removed src folder"
 fi
+echo "*** DONE! *** "
