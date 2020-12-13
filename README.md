@@ -1,5 +1,5 @@
 # running the script
-- run the script using the command "bash script.sh repository_name base_path repository
+- run the script using the command "bash script.sh repository_name base_path repository"
 
 ## Params
 - repository_name is the repository name as it is in github
