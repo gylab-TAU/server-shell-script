@@ -1,7 +1,7 @@
 #!/bin/sh
 repository="https://github.com/gali1998/experiments-server.git"
 base_path="/home/gali/"
-dir_name = "/home/gali/experiments-server"
+directory_name = "/home/gali/experiments-server"
 
 echo "killing existing service called nodeserver.service"...
 
@@ -11,11 +11,11 @@ else
 	echo "successfully killed existing service"
 fi
 
-echo "The project: $repository will be cloned into $dir_name. if it exists it will be overridden"
-if [ -d "$dir_name" ];then
+echo "The project: $repository will be cloned into $directory_name. if it exists it will be overridden"
+if [ -d "$directory_name" ];then
 	echo "removing folder..."
-	if ! rm -Rf $dir_name; then
-		echo "failed to remove directory $dir_name"
+	if ! rm -Rf $directory_name; then
+		echo "failed to remove directory $directory_name"
 	else
 		echo "directory removed successfully"
 	fi
@@ -23,10 +23,10 @@ fi
 
 echo "create empty directory $folder"
 
-if ! mkdir $dir_name; then
-	echo "failed to create directory $dir_name"
+if ! mkdir $directory_name; then
+	echo "failed to create directory $directory_name"
 else
-	echo "created directory $dir_name successfully"
+	echo "created directory $directory_name successfully"
 fi
 
 if ! cd $base_path; then
@@ -43,10 +43,10 @@ else
 	echo "cloned sycessfully"
 fi
 
-if ! cd $dir_name; then
-	echo "failed to enter $dir_name"
+if ! cd $directory_name; then
+	echo "failed to enter $directory_name"
 else
-	echo "entered $dir_name"
+	echo "entered $directory_name"
 fi
 
 echo "installing node_modules...."
@@ -87,7 +87,7 @@ fi
 
 echo "removing src folder..."
 
-if ! rm -Rf $folder/src; then
+if ! rm -Rf $directory_name/src; then
 	echo "failed to remove src folder"
 else
 	echo "sucessfully removed src folder"
