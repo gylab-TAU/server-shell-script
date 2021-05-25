@@ -12,9 +12,9 @@ else
 fi
 
 echo "The project: $repository will be cloned into $directory_name. if it exists it will be overridden"
-if [ -d "$directory_name" ];then
+if [ -d "directory_name" ];then
 	echo "removing folder..."
-	if ! rm -Rf $directory_name; then
+	if ! rm -Rf directory_name; then
 		echo "failed to remove directory $directory_name"
 	else
 		echo "directory removed successfully"
@@ -23,13 +23,13 @@ fi
 
 echo "create empty directory $folder"
 
-if ! mkdir $directory_name; then
+if ! mkdir directory_name; then
 	echo "failed to create directory $directory_name"
 else
 	echo "created directory $directory_name successfully"
 fi
 
-if ! cd $base_path; then
+if ! cd base_path; then
 	echo "failed to enter $base_path"
 else
 	echo "entered $base_path"
@@ -37,13 +37,13 @@ fi
 
 echo "cloning $repolisotry..."
 
-if ! git clone $repository; then
+if ! git clone repository; then
 	echo "failed to clone $repository"
 else
 	echo "cloned sycessfully"
 fi
 
-if ! cd $directory_name; then
+if ! cd directory_name; then
 	echo "failed to enter $directory_name"
 else
 	echo "entered $directory_name"
@@ -87,7 +87,7 @@ fi
 
 echo "removing src folder..."
 
-if ! rm -Rf $directory_name/src; then
+if ! rm -Rf directory_name/src; then
 	echo "failed to remove src folder"
 else
 	echo "sucessfully removed src folder"
