@@ -3,6 +3,7 @@ repository="https://github.com/gali1998/experiments-server.git"
 base_path="/home/gali/"
 directory_name = "/home/gali/experiments-server"
 
+echo $directory_name
 echo "killing existing service called nodeserver.service"...
 
 if ! systemctl stop nodeserver.service; then
@@ -13,7 +14,7 @@ fi
 
 echo "The project: $repository will be cloned into $directory_name. if it exists it will be overridden"
 if [ -d $directory_name ];then
-	echo "removing folder... ($directory_name)"
+	echo "removing folder... $directory_name"
 	if ! rm -Rf $directory_name; then
 		echo "failed to remove directory $directory_name"
 	else
