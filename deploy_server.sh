@@ -13,7 +13,7 @@ fi
 
 echo "The project: $repository will be cloned into $directory_name. if it exists it will be overridden"
 if [ -d $directory_name ];then
-	echo "removing folder..."
+	echo "removing folder... ($directory_name)"
 	if ! rm -Rf $directory_name; then
 		echo "failed to remove directory $directory_name"
 	else
