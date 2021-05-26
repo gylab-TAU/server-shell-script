@@ -1,7 +1,7 @@
 #!/bin/sh
 repository="https://github.com/gali1998/experiments-server.git"
 base_path="/home/gali/"
-directory_name = "/home/gali/experiments-server"
+directory_name="/home/gali/experiments-server"
 
 echo $directory_name
 echo "killing existing service called nodeserver.service"...
