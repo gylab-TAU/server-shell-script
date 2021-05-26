@@ -1,5 +1,5 @@
 #!/bin/sh
-repository="https://github.com/gali1998/experiments-server.git"
+repository="https://github.com/gylab-TAU/experiments-server.git"
 base_path="/home/gali/"
 directory_name="/home/gali/experiments-server"
 
