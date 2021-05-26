@@ -23,14 +23,6 @@ else
 	echo "$directory_name not found"
 fi
 
-echo "create empty directory $directory_name"
-
-if ! mkdir $directory_name; then
-	echo "failed to create directory $directory_name"
-else
-	echo "created directory $directory_name successfully"
-fi
-
 if ! cd $base_path; then
 	echo "failed to enter $base_path"
 else
