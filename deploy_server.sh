@@ -19,6 +19,8 @@ if [ -d "directory_name" ];then
 	else
 		echo "directory removed successfully"
 	fi
+else
+	echo "$directory_name not found"
 fi
 
 echo "create empty directory $folder"
