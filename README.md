@@ -1,7 +1,7 @@
-# running the script
-- run the script using the command "bash script.sh repository_name base_path repository"
+# Running the script
+- from the directory of the script run the command "./deploy_server.sh"
 
-## Params
-- repository_name is the repository name as it is in github
-- base_path is the directory you wish to clone your project into
-- repository is the https link to your repository, you can find it in your main repository page under the button "code"
+## Cloning the script
+- cd into the cloned directory
+- run the command chmod +x deploy_server.sh
+- the script is ready to run
