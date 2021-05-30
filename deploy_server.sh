@@ -1,7 +1,7 @@
 #!/bin/sh
 repository="https://github.com/gylab-TAU/experiments-server.git"
-base_path="/home/gali/"
-directory_name="/home/gali/experiments-server"
+base_path="/home/srv_egozi/"
+directory_name="/home/srv_egozi/experiments-server"
 
 echo "killing existing service called nodeserver.service"...
 
