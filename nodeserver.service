@@ -1,3 +1,4 @@
+#!/bin/bash
 [Unit]
 Description=Node.js Example Server
 #Requires=After=mysql.service       # Requires the mysql service to run first
