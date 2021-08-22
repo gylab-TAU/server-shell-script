@@ -4,7 +4,6 @@ Description=Node.js Example Server
 #Requires=After=mysql.service       # Requires the mysql service to run first
 
 [Service]
-User=gali
 ExecStart=node /server-files/experiments-server/dist/server.js
 # Required on some systems
 #WorkingDirectory=/opt/nodeserver
